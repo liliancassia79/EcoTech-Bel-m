@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router";
+import Welcome from "./components/Welcome";
 import SplashScreen from "./components/SplashScreen";
 import Home from "./components/Home";
 import Security from "./components/Security";
@@ -8,6 +9,10 @@ import DesignSystemDemo from "./components/DesignSystemDemo";
 export const router = createBrowserRouter([
   {
     path: "/",
+    Component: Welcome,
+  },
+  {
+    path: "/splash",
     Component: SplashScreen,
   },
   {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import { MapPin, Shield, Heart, Menu, Palette, Navigation, Info, Leaf, Building2, GraduationCap, Users } from "lucide-react";
+import { MapPin, Shield, Heart, Palette, Info, Building2, GraduationCap, Users } from "lucide-react";
 import { motion } from "motion/react";
 import { GPSButton, Badge } from "./design-system";
 import EcoModeToggle from "./EcoModeToggle";
@@ -109,7 +109,6 @@ export default function Home() {
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Menu className="w-6 h-6" />
             <div>
               <h1 className="text-xl font-bold">EcoTech Belém</h1>
               <p className="text-xs text-green-100">Tecnologia da Amazônia</p>

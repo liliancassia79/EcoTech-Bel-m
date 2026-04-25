@@ -117,6 +117,14 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <EcoModeToggle />
             <button
+              onClick={() => navigate("/")}
+              className="p-2 hover:bg-white/20 rounded-full transition"
+              title="Sobre o app"
+              aria-label="Sobre o app"
+            >
+              <Info className="w-5 h-5" />
+            </button>
+            <button
               onClick={() => navigate("/design-system")}
               className="p-2 hover:bg-white/20 rounded-full transition"
               title="Design System"

@@ -51,7 +51,7 @@ export default function Welcome() {
   ];
 
   return (
-    <div className="size-full overflow-y-auto bg-gradient-to-br from-[var(--eco-amazon-dark)] via-[var(--eco-amazon)] to-[var(--eco-tech-gray)] text-white">
+    <div className="relative size-full overflow-y-auto bg-gradient-to-br from-[var(--eco-amazon-dark)] via-[var(--eco-amazon)] to-[var(--eco-tech-gray)] text-white">
       {/* Decorative background blobs */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <motion.div

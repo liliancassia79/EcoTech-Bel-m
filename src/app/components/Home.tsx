@@ -60,7 +60,7 @@ export default function Home() {
       name: "Líder Independência",
       type: "cooperative",
       x: "55%",
-      y: "70%",
+      y: "60%",
       address: "Supermercado Líder - Tv. Independência, Belém - PA",
       hours: "Seg-Dom: 7h-22h",
       coordinates: "-1.4489,-48.4856",

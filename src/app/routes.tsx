@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Security from "./components/Security";
 import Donations from "./components/Donations";
 import DesignSystemDemo from "./components/DesignSystemDemo";
+import AboutProject from "./components/AboutProject";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
   {
     path: "/home",
     Component: Home,
+  },
+  {
+    path: "/about",
+    Component: AboutProject,
   },
   {
     path: "/security",

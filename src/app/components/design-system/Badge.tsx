@@ -5,13 +5,15 @@ interface BadgeProps {
   variant?: "default" | "success" | "warning" | "danger" | "info";
   size?: "sm" | "md" | "lg";
   icon?: ReactNode;
+  className?: string;
 }
 
 export function Badge({
   children,
   variant = "default",
   size = "md",
-  icon
+  icon,
+  className = "",
 }: BadgeProps) {
   const variantStyles = {
     default: "bg-[var(--eco-light-gray)] text-[var(--eco-graphite)]",
@@ -29,7 +31,7 @@ export function Badge({
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full font-semibold border ${variantStyles[variant]} ${sizeStyles[size]}`}
+      className={`inline-flex items-center gap-1.5 rounded-full font-semibold border ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {icon && <span>{icon}</span>}
       <span>{children}</span>
